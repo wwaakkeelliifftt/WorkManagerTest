@@ -24,7 +24,7 @@ class ColorFilterWorker(
             .getString(WorkerKeys.IMAGE_URI)
             ?.toUri()
             ?.toFile()
-        delay(5000L)
+        delay(2000L)
 
         return imageFile?.let { file ->
             val bmp = BitmapFactory.decodeFile(file.absolutePath)
